@@ -85,20 +85,21 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
   3. `class`es; _(different from PSR-2)_
   4. between methods or functions; _(not defined in PSR-2)_
 
-### Blank Spaces (BS)
+### Blank spaces
 
 1. There MUST be one blank space:
   1. After control structures; _(same as PSR-2)_
   2. After opening parenthesis; _(different from PSR-2)_
-  3. Before closing parenthesis; _(different from PSR-2);
+  3. Before closing parenthesis; _(different from PSR-2)_
   4. Before and after the following operators:  _(not defined in PSR-2)_
-  	1. Arithmetic operators;
-  	2. Assignment operators;
-  	3. Comparison operators;
-  	4. Increment/decrement operators;
-  	5. Logical operators;
-  	6. String operators;
-  	7. Array operators;
+  	1. [Arithmetic operators](http://php.net/manual/en/language.operators.arithmetic.php), except for negation (e.g. `-$x`);
+  	2. [Assignment operators](http://php.net/manual/en/language.operators.assignment.php);
+  	3. [Bitwise operators](http://php.net/manual/en/language.operators.bitwise.php);
+  	4. [Comparison operators](http://php.net/manual/en/language.operators.comparison.php);
+  	5. [Logical operators](http://php.net/manual/en/language.operators.logical.php);
+  	6. [String operators](http://php.net/manual/en/language.operators.string.php);
+  	7. [Array operators](http://php.net/manual/en/language.operators.array.php);
+  	8. [Type operators](http://php.net/manual/en/language.operators.type.php);
   5. After comma; _(not defined in PSR-2)_
 2. Methods and function calls MUST NOT have one blank space after them; _(same as PSR-2)_
 
@@ -113,5 +114,3 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 3. Constants MUST be declared using upppercase letters and snake_case. Example: `MAX_ENERGY`.  _(same as PSR-2)_
 3. Visibility MAY be declared on properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
 4. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
-
-
