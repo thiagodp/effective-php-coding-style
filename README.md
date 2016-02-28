@@ -1,7 +1,7 @@
 # effective-php-coding-style
 An effective PHP coding style, based on the PSR-1. It can be used as an alternative to the PSR-2.
 
-Current [version](http://semver.org/): `1.0` (2016-02-28)
+Current [version](http://semver.org/): `1.0`
 
 ### Translations
 
@@ -44,7 +44,7 @@ class Foo extends Bar implements FooInterface {
 	}
 
 	public static final function bar() {
-    	// method body
+   		// method body
   	}
   	
 }
