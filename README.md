@@ -69,13 +69,17 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ## Lines
 
 1. Files MAY use _any_ line-ending (Windows, Unix or Mac). However, all project files SHOULD use the same line-ending; _(different from PSR-2)_
-2. There MUST NOT be a hard limit on line length; the soft limit MUST be 120 characters; lines SHOULD be 80 characters or less;  _(same as PSR-2)_
+2. There MUST NOT be a hard limit on line length; the soft limit MUST be `120` characters; lines SHOULD be `80` characters or less;  _(same as PSR-2)_
 
 ## Code
 
 ### Identing
 
-1. Code MUST use _tabs_ for indenting, not spaces. Tab size MUST be equivalent to 4 spaces; _(different from PSR-2)_
+1. Code MUST use _tabs_ for indenting, not spaces. Tab size MUST be equivalent to `4` spaces; _(different from PSR-2)_
+
+### Character set
+
+1. PHP files MUST use only UTF-8 without Byte Order Mark (BOM); _(same as PSR-2)_
 
 ### Blanks lines
 
@@ -118,8 +122,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ## Declarations
 
 1. Visibility MAY be declared on properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
-2. Constants MUST be declared using upppercase letters and snake_case. Example: `MAX_ENERGY`. _(same as PSR-2)_
-3. Classes MUST be declared using PascalCase. Example: `MySimpleClass`. _(same as PSR-2)_
+2. Constants MUST be declared in all upper case with underscore separators. Example: `MAX_ENERGY`. _(same as PSR-2)_
+3. Classes, interfaces and traits MUST be declared using PascalCase. Example: `MySimpleClass`. _(same as PSR-2)_
 4. Methods MUST be declared using camelCase. Example: `mySimpleMethod`. _(same as PSR-2)_
 5. Closures MUST be declared with a space after the `function` keyword, and a space before and after the `use` keyword. _(same as PSR-2)_
 6. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line. _(same as PSR-2)_
@@ -127,3 +131,17 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 8. Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line. _(same as PSR-2)_
 9. Control structures MUST always use braces; _(not defined in PSR-2)_
 10. Classes without a namespace MUST be referenced with a backslash (`\`) before their names. Example: `\MyClass`. _(not defined in PSR-2)_
+11. The [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) style MAY be used for documenting files, namespaces, classes, interfaces, traits, methods, functions, and other code constructions.
+
+## Remarks
+
+Some elements were not included in this guide, and may appear in a next version:
+* namespaces;
+* some good practices;
+
+Do you want to improve it? Please open an [Issue](https://github.com/thiagodp/effective-php-coding-style/issues).
+
+
+# Examples
+
+See some examples [here](examples.md).
