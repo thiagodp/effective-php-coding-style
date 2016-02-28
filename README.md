@@ -33,21 +33,22 @@ use OtherVendor\OtherPackage\BazClass;
 
 class Foo extends Bar implements FooInterface {
 
-  public function sampleFunction( $a, $b = null ) {
-    if ( $a === $b ) {
-      bar();
-    } else if ( $a > $b ) {
-      $foo->bar( $arg1 );
-    } else {
-      BazClass::bar( $arg2, $arg3 );
-    }
-  }
+	public function sampleFunction( $a, $b = null ) {
+		if ( $a === $b ) {
+			bar();
+		} else if ( $a > $b ) {
+			$foo->bar( $arg1 );
+		} else {
+			BazClass::bar( $arg2, $arg3 );
+		}
+	}
 
-  public static final function bar() {
-    // method body
-  }
-  
+	public static final function bar() {
+    	// method body
+  	}
+  	
 }
+?>
 ```
 
 # The Coding Style
@@ -79,17 +80,26 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ### Blanks lines
 
 1. There MUST be one blank line after the declaration of:
-  - `namespace`s; _(same as PSR-2)_
-  - `use`s;  _(same as PSR-2)_
-  - `class`es; _(different from PSR-2)_
+  1. `namespace`s; _(same as PSR-2)_
+  2. `use`s;  _(same as PSR-2)_
+  3. `class`es; _(different from PSR-2)_
+  4. between methods or functions; _(not defined in PSR-2)_
 
-### Blank spaces
+### Blank Spaces (BS)
 
-1. One blank space MUST be placed:
-  - After control structures; _(same as PSR-2)_
-  - After opening parenthesis; _(different from PSR-2)_
-  - Before closing parenthesis; _(different from PSR-2)_
-  - After comma; _(not defined in PSR-2)_
+1. There MUST be one blank space:
+  1. After control structures; _(same as PSR-2)_
+  2. After opening parenthesis; _(different from PSR-2)_
+  3. Before closing parenthesis; _(different from PSR-2);
+  4. Before and after the following operators:  _(not defined in PSR-2)_
+  	1. Arithmetic operators;
+  	2. Assignment operators;
+  	3. Comparison operators;
+  	4. Increment/decrement operators;
+  	5. Logical operators;
+  	6. String operators;
+  	7. Array operators;
+  5. After comma; _(not defined in PSR-2)_
 2. Methods and function calls MUST NOT have one blank space after them; _(same as PSR-2)_
 
 ### Braces
@@ -100,7 +110,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 1. PHP [keywords](http://php.net/manual/en/reserved.keywords.php) MUST be in lower case;  _(same as PSR-2)_
 2. The PHP constants `true`, `false`, and `null` MUST be in lower case;  _(same as PSR-2)_
-3. Visibility MAY be declared on all properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
+3. Constants MUST be declared using upppercase letters and snake_case. Example: `MAX_ENERGY`.  _(same as PSR-2)_
+3. Visibility MAY be declared on properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
 4. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
 
 
