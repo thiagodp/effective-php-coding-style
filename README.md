@@ -113,6 +113,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 2. The PHP constants `true`, `false`, and `null` MUST be in lower case;  _(same as PSR-2)_
 3. `else` MUST be separated from `if` on `else if`s; _(different from PSR-2)_
 4. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
+5. `include`, `require`, `include_once`, and `require_once` MUST not use parentheses (i.e.: `require_once 'MyClass.php';`);
 
 ## Declarations
 
@@ -120,8 +121,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 2. Constants MUST be declared using upppercase letters and snake_case. Example: `MAX_ENERGY`. _(same as PSR-2)_
 3. Classes MUST be declared using PascalCase. Example: `MySimpleClass`. _(same as PSR-2)_
 4. Methods MUST be declared using camelCase. Example: `mySimpleMethod`. _(same as PSR-2)_
-5. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line. _(same as PSR-2)_
-6. The extends and implements keywords MUST be declared on the same line as the class name. _(same as PSR-2)_
-7. Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line. _(same as PSR-2)_
-8. Control structures MUST always use braces; _(not defined in PSR-2)_
-9. Classes without a namespace MUST be referenced with a backslash (`\`) before their names. Example: `\MyClass`. _(not defined in PSR-2)_
+5. Closures MUST be declared with a space after the `function` keyword, and a space before and after the `use` keyword. _(same as PSR-2)_
+6. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line. _(same as PSR-2)_
+7. The extends and implements keywords MUST be declared on the same line as the class name. _(same as PSR-2)_
+8. Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line. _(same as PSR-2)_
+9. Control structures MUST always use braces; _(not defined in PSR-2)_
+10. Classes without a namespace MUST be referenced with a backslash (`\`) before their names. Example: `\MyClass`. _(not defined in PSR-2)_
