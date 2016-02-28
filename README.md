@@ -1,11 +1,11 @@
 # effective-php-coding-style
 An effective PHP coding style, based on the PSR-1. It can be used as an alternative to the PSR-2.
 
-Current [version](http://semver.org/): `1.0`
+Current [version](http://semver.org/): `0.1` _(under construction)_
 
 ### Translations
 
-- [Brazilian Portuguese](README-PT-BR.md)
+- [Brazilian Portuguese](README-PT-BR.md) **SOON!**
 
 ### About
 
@@ -17,7 +17,7 @@ However, the [PSR-2](http://www.php-fig.org/psr/psr-2/) _coding style guide_ has
 * Opening parentheses for control structures do not have a pharentheses after them.
 * _etc._
 
-Hence the coding style presented here can be used as an alternative to PSR-2. It is simpler and presents some code examples. We point out the differences between the guidelines during their definition, so take a look and make your conclusions.
+Hence the coding style presented here can be used as an alternative to PSR-2. It is simpler, presents some code examples and have a different structure. We point out the differences between the guidelines during their definition, so take a look and make your conclusions.
 
 ### Example
 
@@ -50,23 +50,57 @@ class Foo extends Bar implements FooInterface {
 }
 ```
 
-### Overview
+# The Coding Style
+
+## General
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 1. Code MUST follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) "coding style guide"; _(same as PSR-2)_
-2. Code MUST tabs for indenting, not spaces. Tab size MUST be equivalent to 4 spaces; _(different from PSR-2)_
-3. There MUST NOT be a hard limit on line length; the soft limit MUST be 120 characters; lines SHOULD be 80 characters or less;  _(same as PSR-2)_
-4. There MUST be one blank line after the declaration of:
+
+## Naming
+
+1. Directories MUST use dashed-case (examples: `api`, `sample-code`); _(not defined in PSR-2)_
+2. PHP files MUST be named with the `.php` extension. You MAY use `.class.php` or `.inc.php` but this is NOT RECOMMENDED; _(not defined in PSR-2)_
+3. Files that contain classes MUST be named using the main class' name (example: `MyImportantClass.php`);
+4. Files that do not containt classes MUST be named in dashed-case (example: `hello-world.php`)
+
+## Lines
+
+1. Files MAY use _any_ line-ending (Windows, Unix or Mac). However, all project files SHOULD use the same line-ending; _(different from PSR-2)_
+2. There MUST NOT be a hard limit on line length; the soft limit MUST be 120 characters; lines SHOULD be 80 characters or less;  _(same as PSR-2)_
+
+## Code
+
+### Identing
+
+1. Code MUST use _tabs_ for indenting, not spaces. Tab size MUST be equivalent to 4 spaces; _(different from PSR-2)_
+
+### Blanks lines
+
+1. There MUST be one blank line after the declaration of:
   - `namespace`s; _(same as PSR-2)_
   - `use`s;  _(same as PSR-2)_
   - `class`es; _(different from PSR-2)_
-5. Opening braces MUST go on the same line, and closing braces MUST go on the next line after the body, for any code constructions; _(different from PSR-2)_
-6. One blank space MUST be placed:
+
+### Blank spaces
+
+1. One blank space MUST be placed:
   - After control structures; _(same as PSR-2)_
   - After opening parenthesis; _(different from PSR-2)_
   - Before closing parenthesis; _(different from PSR-2)_
   - After comma; _(not defined in PSR-2)_
-7. Methods and function calls MUST NOT have one space after them; _(same as PSR-2)_
-8. Visibility MAY be declared on all properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
-9. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
+2. Methods and function calls MUST NOT have one blank space after them; _(same as PSR-2)_
+
+### Braces
+
+1. Opening braces MUST go on the same line, and closing braces MUST go on the next line after the body, for any code constructions; _(different from PSR-2)_
+
+### The Language
+
+1. PHP [keywords](http://php.net/manual/en/reserved.keywords.php) MUST be in lower case;  _(same as PSR-2)_
+2. The PHP constants `true`, `false`, and `null` MUST be in lower case;  _(same as PSR-2)_
+3. Visibility MAY be declared on all properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
+4. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
+
+
