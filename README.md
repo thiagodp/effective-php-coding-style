@@ -77,7 +77,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 1. Code MUST use _tabs_ for indenting, not spaces. Tab size MUST be equivalent to 4 spaces; _(different from PSR-2)_
 
-### Blanks Lines
+### Blanks lines
 
 1. There MUST be one blank line after the declaration of:
   1. `namespace`s; _(same as PSR-2)_
@@ -85,7 +85,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
   3. `class`es; _(different from PSR-2)_
   4. between methods or functions; _(not defined in PSR-2)_
 
-### Blank Spaces
+### Blank spaces
 
 1. There MUST be one blank space:
   1. After control structures; _(same as PSR-2)_
@@ -107,24 +107,21 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 1. Opening braces MUST go on the same line, and closing braces MUST go on the next line after the body, for any code constructions; _(different from PSR-2)_
 
-### The Language
-
-#### Keywords
+### Keywords
 
 1. PHP [keywords](http://php.net/manual/en/reserved.keywords.php) MUST be in lower case;  _(same as PSR-2)_
 2. The PHP constants `true`, `false`, and `null` MUST be in lower case;  _(same as PSR-2)_
 3. `else` MUST be separated from `if` on `else if`s; _(different from PSR-2)_
 4. `abstract`, `final` and `static` MUST be declared _after_ the visibility, and `static` MUST be declared _after_ `final`; _(different from PSR-2)_
 
-#### Declarations
+## Declarations
 
 1. Visibility MAY be declared on properties and methods (PHP assumes `public` as the default visibility); _(different from PSR-2)_
 2. Constants MUST be declared using upppercase letters and snake_case. Example: `MAX_ENERGY`. _(same as PSR-2)_
 3. Classes MUST be declared using PascalCase. Example: `MySimpleClass`. _(same as PSR-2)_
 4. Methods MUST be declared using camelCase. Example: `mySimpleMethod`. _(same as PSR-2)_
-5. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line.  _(same as PSR-2)_
-
-## Good Practices
-
-1. Control structures MUST always use braces; _(not defined in PSR-2)_
-2. 
+5. Argument lists MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one argument per line. _(same as PSR-2)_
+6. The extends and implements keywords MUST be declared on the same line as the class name. _(same as PSR-2)_
+7. Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line. _(same as PSR-2)_
+8. Control structures MUST always use braces; _(not defined in PSR-2)_
+9. Classes without a namespace MUST be referenced with a backslash (`\`) before their names. Example: `\MyClass`. _(not defined in PSR-2)_
