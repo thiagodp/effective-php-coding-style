@@ -51,6 +51,10 @@ class Foo extends Bar implements FooInterface {
 ?>
 ```
 
+### Quick Tip
+
+Are you in a hurry? [Jump to the examples](examples.md).
+
 # The Coding Style
 
 ## General
