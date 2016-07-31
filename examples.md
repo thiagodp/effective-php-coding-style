@@ -5,7 +5,6 @@
 Interfaces and traits follow the same rules as classes. Functions follow the same rules as methods.
 
 ```php
-<?php
 namespace Vendor\Package;
 
 use FooInterface;
@@ -30,13 +29,11 @@ class Foo extends Bar implements FooInterface {
     }
 
 }
-?>
 ```
 
 ## closure
 
 ```php
-<?php
 $closureWithArgs = function ( $arg1, $arg2 ) {
     // body
 };
@@ -44,13 +41,11 @@ $closureWithArgs = function ( $arg1, $arg2 ) {
 $closureWithArgsAndVars = function ( $arg1, $arg2 ) use ( $var1, $var2 ) {
     // body
 };
-?>
 ```
 
 ## if, else, else if
 
 ```php
-<?php
 if ( $a > $b ) {
 	// body
 } else if ( $b > $c && $a < SOME_CONSTANT ) {
@@ -58,13 +53,11 @@ if ( $a > $b ) {
 } else {
 	// body
 }
-?>
 ```
 
 ## switch
 
 ```php
-<?php
 switch ( $value ) {
 	case 10: {
 		$x = 100;
@@ -83,13 +76,11 @@ switch ( $value ) {
 		$x = 0;
 	}
 }
-?>
 ```
 
 ## while, do while
 
 ```php
-<?php
 $i = 0;
 while ( $i < 100 ) {
 	++$i;
@@ -99,13 +90,11 @@ $i = 0;
 do {
 	++$i;
 } while ( $i < 100 );
-?>
 ```
 
 ## for, foreach
 
 ```php
-<?php
 for ( $i = 0; $i < 100; ++$i ) {
 	// body
 }
@@ -114,13 +103,11 @@ $ages = array( 'Bob' => 20, 'Suzan' = 19, 'Paul' = 35 );
 foreach ( $ages as $name => $age ) {
 	echo $name, ' is ', $age, ' years old.';
 }
-?>
 ```
 
 ## try, catch, finally
 
 ```php
-<?php
 $pdo = null;
 $result = 'connected!';
 try {
@@ -130,16 +117,13 @@ try {
 } finally {
 	logMe( $result );
 }
-?>
 ```
 
 ## operators
 
 ```php
-<?php
 $min = $value < 0 ? 0 : $value;
 if ( $max < $min || $max === ( $min / 2 ) ) {
 	// ...
 }
-?>
 ```
