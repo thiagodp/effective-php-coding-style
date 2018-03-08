@@ -19,9 +19,13 @@ However, the [PSR-2](http://www.php-fig.org/psr/psr-2/) _coding style guide_ has
 
 Hence the coding style presented here can be used as an alternative to PSR-2. It is simpler, presents some code examples and have a different structure. We point out the differences between the guidelines during their definition, so take a look and make your conclusions.
 
-### Example
+### Quick Tip
 
-The following piece of code is the same presented in PSR-2, [here](http://www.php-fig.org/psr/psr-2/#1-1-example), but uses our coding style.
+*Are you in a hurry?* [Jump to the examples](examples.md).
+
+### Basic Example
+
+The following piece of code is the same presented in PSR-2 ([here](http://www.php-fig.org/psr/psr-2/#1-1-example)), but uses our coding style.
 
 ```php
 <?php
@@ -33,27 +37,23 @@ use OtherVendor\OtherPackage\BazClass;
 
 class Foo extends Bar implements FooInterface {
 
-	public function sampleFunction( $a, $b = null ) {
-		if ( $a === $b ) {
-			bar();
-		} else if ( $a > $b ) {
-			$foo->bar( $arg1 );
-		} else {
-			BazClass::bar( $arg2, $arg3 );
-		}
-	}
+    public function sampleFunction( $a, $b = null ) {
+        if ( $a === $b ) {
+            bar();
+        } else if ( $a > $b ) {
+            $foo->bar( $arg1 );
+        } else {
+            BazClass::bar( $arg2, $arg3 );
+        }
+    }
 
-	public static final function bar() {
-   		// method body
-  	}
+    public static final function bar() {
+        // method body
+    }
   	
 }
 ?>
 ```
-
-### Quick Tip
-
-Are you in a hurry? [Jump to the examples](examples.md).
 
 # The Coding Style
 
