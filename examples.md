@@ -13,12 +13,12 @@ use OtherVendor\OtherPackage\BazClass;
 
 class Foo extends Bar implements FooInterface {
 
-	const X = 0;
-	private $any;
+    const X = 0;
+    private $any;
 	
-	function __constructor() {
-		$this->any = self::X;
-	}
+    function __constructor() {
+        $this->any = self::X;
+    }
 
     public function sampleFunction( $a, $b = null ) {
         // method body
@@ -47,11 +47,11 @@ $closureWithArgsAndVars = function ( $arg1, $arg2 ) use ( $var1, $var2 ) {
 
 ```php
 if ( $a > $b ) {
-	// body
+    // body
 } else if ( $b > $c && $a < SOME_CONSTANT ) {
-	// body
+    // body
 } else {
-	// body
+    // body
 }
 ```
 
@@ -59,22 +59,22 @@ if ( $a > $b ) {
 
 ```php
 switch ( $value ) {
-	case 10: {
-		$x = 100;
-		break;
-	}
-	case 20: ; // no break
-	case 30: ; // no break
-	case 40: {
-		$x = 200;
-		// no break
-	}
-	case 50: {
-		return ++$x;
-	}
-	default: {
-		$x = 0;
-	}
+    case 10: {
+        $x = 100;
+        break;
+    }
+    case 20: ; // no break
+    case 30: ; // no break
+    case 40: {
+        $x = 200;
+        // no break
+    }
+    case 50: {
+        return ++$x;
+    }
+    default: {
+        $x = 0;
+    }
 }
 ```
 
@@ -83,12 +83,12 @@ switch ( $value ) {
 ```php
 $i = 0;
 while ( $i < 100 ) {
-	++$i;
+    ++$i;
 }
 
 $i = 0;
 do {
-	++$i;
+    ++$i;
 } while ( $i < 100 );
 ```
 
@@ -96,12 +96,12 @@ do {
 
 ```php
 for ( $i = 0; $i < 100; ++$i ) {
-	// body
+    // body
 }
 
 $ages = array( 'Bob' => 20, 'Suzan' = 19, 'Paul' = 35 );
 foreach ( $ages as $name => $age ) {
-	echo $name, ' is ', $age, ' years old.';
+    echo $name, ' is ', $age, ' years old.';
 }
 ```
 
@@ -111,11 +111,11 @@ foreach ( $ages as $name => $age ) {
 $pdo = null;
 $result = 'connected!';
 try {
-	$pdo = new PDO('mysql:host=127.0.0.1;dbname=test', 'root', '' );
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=test', 'root', '' );
 } catch ( \PDOException $pe ) {
-	$result = 'Database connection error: ' . $e->getMessage();
+    $result = 'Database connection error: ' . $e->getMessage();
 } finally {
-	logMe( $result );
+    logMe( $result );
 }
 ```
 
@@ -124,6 +124,6 @@ try {
 ```php
 $min = $value < 0 ? 0 : $value;
 if ( $max < $min || $max === ( $min / 2 ) ) {
-	// ...
+    // ...
 }
 ```
